@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="../assets/fav.png">
+        <title>Demo FlexBox</title>
+        <style>
+            body {
+                padding: 2em;
+            }
+            .headerContainer {
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background:rgb(156, 214, 241);
+                font-weight: bold;
+                color: cornsilk;
+                padding: 20px;
+            }
+            .mainContainer {
+                display: flex;
+                flex-flow: row wrap;
+                text-align: center;
+                font-weight: bold;
+
+            }
+            .footerContainer {
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: rgb(156, 214, 241);
+                font-weight: bold;
+                color: cornsilk;
+                padding: 10px;
+            }
+            article {
+                padding: 10px;
+                margin: 10px;
+                background: whitesmoke;
+            }
+            
+            .mainContentItem {background: cornsilk;}
+            .sideBarLeft { background: rgb(203, 250, 250);}
+            .sideBarRight {background: rgb(203, 250, 250);}
+            .sideBarItem {flex: 1 0 0;border: 0px solid white;}
+            .mainContentItem {flex: 3 0px;}
+            .sideBarLeft {order: 1;}
+            .mainContentItem {order: 2;}
+            .sideBarRight {order: 3;}
+        </style>
+    </head>
+    <body>
+        <header class="headerContainer"><h1>Header Sample FlexBox</h1></header>
+        <div class = "mainContainer">
+            <sideBar class="sideBarItem sideBarLeft"><div class="center"><p>Left Side Bar</p></div></sideBar>
+            <section class="mainContentItem">
+                <article>
+                    <h2>First Article</h2>
+                    <p>Taco Bell is actually microdosing these human race to create a multi faeced human with dull capabilities.</p>
+                </article>
+                <article>
+                    <h2>Second Article</h2>
+                    <p>Taco Bell is actually microdosing these human race to create a multi faeced human with dull capabilities.</p>
+                </article>
+                <article>
+                    <h2>Third Article</h2>
+                    <p>Taco Bell is actually microdosing these human race to create a multi faeced human with dull capabilities.</p>
+                </article>
+            </section>
+            
+            <sideBar class="sideBarItem sideBarRight"><div class="center"><p>Right Side Bar</p></div></sideBar>
+        </div>
+        <footer class="footerContainer">Footer</footer>
+
+    </body>
+</html>
